@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6E8B4DC235805C900113376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B4DB235805C900113376 /* AppDelegate.swift */; };
+		E6E8B4DE235805C900113376 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E8B4DD235805C900113376 /* art.scnassets */; };
+		E6E8B4E0235805C900113376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B4DF235805C900113376 /* ViewController.swift */; };
+		E6E8B4E3235805C900113376 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E8B4E1235805C900113376 /* Main.storyboard */; };
+		E6E8B4E5235805CB00113376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E8B4E4235805CB00113376 /* Assets.xcassets */; };
+		E6E8B4E8235805CB00113376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E8B4E6235805CB00113376 /* LaunchScreen.storyboard */; };
+		E6E8B4F3235805CB00113376 /* IdahoPennTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B4F2235805CB00113376 /* IdahoPennTests.swift */; };
+		E6E8B4FE235805CB00113376 /* IdahoPennUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B4FD235805CB00113376 /* IdahoPennUITests.swift */; };
+		E6E8B510235808BA00113376 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B50F235808BA00113376 /* MapViewController.swift */; };
+		F7613F2F23D95B0800545FAD /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F2E23D95B0800545FAD /* AdminViewController.swift */; };
+		F7613F3323D962D000545FAD /* adminbldg_caption.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7613F3223D962CF00545FAD /* adminbldg_caption.wav */; };
+		F7613F3523E2749C00545FAD /* barber_caption.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7613F3423E2749C00545FAD /* barber_caption.wav */; };
+		F7613F3723E274CA00545FAD /* BarberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F3623E274CA00545FAD /* BarberViewController.swift */; };
+		F7613F3923E276A600545FAD /* ChapelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F3823E276A600545FAD /* ChapelViewController.swift */; };
+		F7613F3B23E2770D00545FAD /* chapel_caption.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7613F3A23E2770D00545FAD /* chapel_caption.wav */; };
+		F7613F3D23E2783400545FAD /* dining_caption.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7613F3C23E2783400545FAD /* dining_caption.wav */; };
+		F7613F3F23E278A000545FAD /* DiningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F3E23E278A000545FAD /* DiningViewController.swift */; };
+		F7613F4123E279A700545FAD /* hospital_caption.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7613F4023E279A700545FAD /* hospital_caption.wav */; };
+		F7613F4323E27A6800545FAD /* HospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F4223E27A6800545FAD /* HospitalViewController.swift */; };
+		F7613F4523E27BEA00545FAD /* rosegarden_caption.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7613F4423E27BEA00545FAD /* rosegarden_caption.wav */; };
+		F7613F4723E27BFC00545FAD /* RoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F4623E27BFC00545FAD /* RoseViewController.swift */; };
+		F7613F4923E27CE200545FAD /* sallyport_caption.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7613F4823E27CE200545FAD /* sallyport_caption.wav */; };
+		F7613F4B23E27D2E00545FAD /* SallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F4A23E27D2E00545FAD /* SallyViewController.swift */; };
+		F7613F4D23E27E5D00545FAD /* womens_caption.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7613F4C23E27E5D00545FAD /* womens_caption.wav */; };
+		F7613F4F23E27E9100545FAD /* WomensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F4E23E27E9100545FAD /* WomensViewController.swift */; };
+		F7613F5123E27EE800545FAD /* yard_caption.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7613F5023E27EE800545FAD /* yard_caption.wav */; };
+		F7613F5323E27F5A00545FAD /* YardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F5223E27F5A00545FAD /* YardViewController.swift */; };
+		F7613F552400618500545FAD /* HospitalARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F542400618500545FAD /* HospitalARViewController.swift */; };
+		F7613F572400620300545FAD /* Hospital.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F7613F562400620300545FAD /* Hospital.rcproject */; };
+		F7613F952410CB3100545FAD /* ShedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F942410CB3100545FAD /* ShedViewController.swift */; };
+		F7613F97241570CF00545FAD /* AudioTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613F96241570CF00545FAD /* AudioTabViewController.swift */; };
+		F7613FA024157C8D00545FAD /* Yard_Interview.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7613F9824157C8C00545FAD /* Yard_Interview.mp3 */; };
+		F7613FA124157C8D00545FAD /* Chapel_Interview.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7613F9924157C8C00545FAD /* Chapel_Interview.mp3 */; };
+		F7613FA224157C8D00545FAD /* Sally_Interview.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7613F9A24157C8C00545FAD /* Sally_Interview.mp3 */; };
+		F7613FA324157C8D00545FAD /* Rose_Interview.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7613F9B24157C8C00545FAD /* Rose_Interview.mp3 */; };
+		F7613FA424157C8D00545FAD /* Dining_Interview.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7613F9C24157C8C00545FAD /* Dining_Interview.mp3 */; };
+		F7613FA524157C8D00545FAD /* Womens_Interview.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7613F9D24157C8D00545FAD /* Womens_Interview.mp3 */; };
+		F7613FA624157C8D00545FAD /* Shed_Interview.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7613F9E24157C8D00545FAD /* Shed_Interview.mp3 */; };
+		F7613FA724157C8D00545FAD /* Chapel_Interview2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7613F9F24157C8D00545FAD /* Chapel_Interview2.mp3 */; };
+		F7613FA924157CDE00545FAD /* WomensInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613FA824157CDE00545FAD /* WomensInterviewViewController.swift */; };
+		F7613FAD24157DEC00545FAD /* ChapelInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613FAC24157DEC00545FAD /* ChapelInterviewViewController.swift */; };
+		F7613FAF24157E2000545FAD /* ShedInterviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613FAE24157E2000545FAD /* ShedInterviewController.swift */; };
+		F7613FB124157E9A00545FAD /* YardInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613FB024157E9A00545FAD /* YardInterviewViewController.swift */; };
+		F7613FB324157EC200545FAD /* DiningInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613FB224157EC200545FAD /* DiningInterviewViewController.swift */; };
+		F7613FB524157EEE00545FAD /* RoseInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613FB424157EEE00545FAD /* RoseInterviewViewController.swift */; };
+		F7613FB724157F4300545FAD /* SallyInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613FB624157F4300545FAD /* SallyInterviewViewController.swift */; };
+		F7613FB9241593C400545FAD /* MugshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7613FB8241593C400545FAD /* MugshotViewController.swift */; };
+		F789F59E236CBC2B001ECC21 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F789F59D236CBC2B001ECC21 /* LocationViewController.swift */; };
+		F789F5A0236CC424001ECC21 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F789F59F236CC424001ECC21 /* MainNavigationController.swift */; };
+		F7DC1A34243AC81C0050C780 /* Gallows.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F7DC1A33243AC81C0050C780 /* Gallows.rcproject */; };
+		F7DC1A36243AC9580050C780 /* GallowsARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC1A35243AC9580050C780 /* GallowsARViewController.swift */; };
+		F7DC1A38243ADFA30050C780 /* Chapel.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F7DC1A37243ADFA30050C780 /* Chapel.rcproject */; };
+		F7DC1A3A243AE4E00050C780 /* ChapelARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC1A39243AE4E00050C780 /* ChapelARViewController.swift */; };
+		F7DC1A3C243AF1930050C780 /* DiningARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC1A3B243AF1930050C780 /* DiningARViewController.swift */; };
+		F7DC1A3E243AF8FD0050C780 /* DiningHall.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F7DC1A3D243AF8FD0050C780 /* DiningHall.rcproject */; };
+		F7DC1A40243AFB680050C780 /* StorageShed_caption.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7DC1A3F243AFB680050C780 /* StorageShed_caption.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6E8B4EF235805CB00113376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6E8B4D0235805C900113376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6E8B4D7235805C900113376;
+			remoteInfo = IdahoPenn;
+		};
+		E6E8B4FA235805CB00113376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6E8B4D0235805C900113376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6E8B4D7235805C900113376;
+			remoteInfo = IdahoPenn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E6E8B4D8235805C900113376 /* IdahoPenn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdahoPenn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E8B4DB235805C900113376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6E8B4DD235805C900113376 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		E6E8B4DF235805C900113376 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E6E8B4E2235805C900113376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6E8B4E4235805CB00113376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6E8B4E7235805CB00113376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6E8B4E9235805CB00113376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6E8B4EE235805CB00113376 /* IdahoPennTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdahoPennTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E8B4F2235805CB00113376 /* IdahoPennTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdahoPennTests.swift; sourceTree = "<group>"; };
+		E6E8B4F4235805CB00113376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6E8B4F9235805CB00113376 /* IdahoPennUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdahoPennUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E8B4FD235805CB00113376 /* IdahoPennUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdahoPennUITests.swift; sourceTree = "<group>"; };
+		E6E8B4FF235805CB00113376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6E8B50F235808BA00113376 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F7613F2E23D95B0800545FAD /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		F7613F3223D962CF00545FAD /* adminbldg_caption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = adminbldg_caption.wav; path = ../../../../../../Downloads/adminbldg_caption.wav; sourceTree = "<group>"; };
+		F7613F3423E2749C00545FAD /* barber_caption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = barber_caption.wav; path = ../../../../../../Downloads/barber_caption.wav; sourceTree = "<group>"; };
+		F7613F3623E274CA00545FAD /* BarberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BarberViewController.swift; path = IdahoPenn/BarberViewController.swift; sourceTree = SOURCE_ROOT; };
+		F7613F3823E276A600545FAD /* ChapelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelViewController.swift; sourceTree = "<group>"; };
+		F7613F3A23E2770D00545FAD /* chapel_caption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = chapel_caption.wav; path = ../../../../../../Downloads/chapel_caption.wav; sourceTree = "<group>"; };
+		F7613F3C23E2783400545FAD /* dining_caption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dining_caption.wav; path = ../../../../../../Downloads/dining_caption.wav; sourceTree = "<group>"; };
+		F7613F3E23E278A000545FAD /* DiningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningViewController.swift; sourceTree = "<group>"; };
+		F7613F4023E279A700545FAD /* hospital_caption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hospital_caption.wav; path = ../../../../../../Downloads/hospital_caption.wav; sourceTree = "<group>"; };
+		F7613F4223E27A6800545FAD /* HospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalViewController.swift; sourceTree = "<group>"; };
+		F7613F4423E27BEA00545FAD /* rosegarden_caption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = rosegarden_caption.wav; path = ../../../../../../Downloads/rosegarden_caption.wav; sourceTree = "<group>"; };
+		F7613F4623E27BFC00545FAD /* RoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoseViewController.swift; sourceTree = "<group>"; };
+		F7613F4823E27CE200545FAD /* sallyport_caption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sallyport_caption.wav; path = ../../../../../../Downloads/sallyport_caption.wav; sourceTree = "<group>"; };
+		F7613F4A23E27D2E00545FAD /* SallyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SallyViewController.swift; sourceTree = "<group>"; };
+		F7613F4C23E27E5D00545FAD /* womens_caption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = womens_caption.wav; path = ../../../../../../Downloads/womens_caption.wav; sourceTree = "<group>"; };
+		F7613F4E23E27E9100545FAD /* WomensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensViewController.swift; sourceTree = "<group>"; };
+		F7613F5023E27EE800545FAD /* yard_caption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = yard_caption.wav; path = ../../../../../../Downloads/yard_caption.wav; sourceTree = "<group>"; };
+		F7613F5223E27F5A00545FAD /* YardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YardViewController.swift; sourceTree = "<group>"; };
+		F7613F542400618500545FAD /* HospitalARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalARViewController.swift; sourceTree = "<group>"; };
+		F7613F562400620300545FAD /* Hospital.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Hospital.rcproject; sourceTree = "<group>"; };
+		F7613F942410CB3100545FAD /* ShedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShedViewController.swift; sourceTree = "<group>"; };
+		F7613F96241570CF00545FAD /* AudioTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTabViewController.swift; sourceTree = "<group>"; };
+		F7613F9824157C8C00545FAD /* Yard_Interview.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yard_Interview.mp3; sourceTree = "<group>"; };
+		F7613F9924157C8C00545FAD /* Chapel_Interview.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chapel_Interview.mp3; sourceTree = "<group>"; };
+		F7613F9A24157C8C00545FAD /* Sally_Interview.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sally_Interview.mp3; sourceTree = "<group>"; };
+		F7613F9B24157C8C00545FAD /* Rose_Interview.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rose_Interview.mp3; sourceTree = "<group>"; };
+		F7613F9C24157C8C00545FAD /* Dining_Interview.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dining_Interview.mp3; sourceTree = "<group>"; };
+		F7613F9D24157C8D00545FAD /* Womens_Interview.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Womens_Interview.mp3; sourceTree = "<group>"; };
+		F7613F9E24157C8D00545FAD /* Shed_Interview.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shed_Interview.mp3; sourceTree = "<group>"; };
+		F7613F9F24157C8D00545FAD /* Chapel_Interview2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chapel_Interview2.mp3; sourceTree = "<group>"; };
+		F7613FA824157CDE00545FAD /* WomensInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensInterviewViewController.swift; sourceTree = "<group>"; };
+		F7613FAC24157DEC00545FAD /* ChapelInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelInterviewViewController.swift; sourceTree = "<group>"; };
+		F7613FAE24157E2000545FAD /* ShedInterviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShedInterviewController.swift; sourceTree = "<group>"; };
+		F7613FB024157E9A00545FAD /* YardInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YardInterviewViewController.swift; path = IdahoPenn/YardInterviewViewController.swift; sourceTree = SOURCE_ROOT; };
+		F7613FB224157EC200545FAD /* DiningInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningInterviewViewController.swift; sourceTree = "<group>"; };
+		F7613FB424157EEE00545FAD /* RoseInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoseInterviewViewController.swift; path = IdahoPenn/RoseInterviewViewController.swift; sourceTree = SOURCE_ROOT; };
+		F7613FB624157F4300545FAD /* SallyInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SallyInterviewViewController.swift; sourceTree = "<group>"; };
+		F7613FB8241593C400545FAD /* MugshotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MugshotViewController.swift; sourceTree = "<group>"; };
+		F789F59D236CBC2B001ECC21 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		F789F59F236CC424001ECC21 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		F7DC1A33243AC81C0050C780 /* Gallows.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Gallows.rcproject; sourceTree = "<group>"; };
+		F7DC1A35243AC9580050C780 /* GallowsARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallowsARViewController.swift; sourceTree = "<group>"; };
+		F7DC1A37243ADFA30050C780 /* Chapel.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Chapel.rcproject; sourceTree = "<group>"; };
+		F7DC1A39243AE4E00050C780 /* ChapelARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapelARViewController.swift; sourceTree = "<group>"; };
+		F7DC1A3B243AF1930050C780 /* DiningARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningARViewController.swift; sourceTree = "<group>"; };
+		F7DC1A3D243AF8FD0050C780 /* DiningHall.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = DiningHall.rcproject; sourceTree = "<group>"; };
+		F7DC1A3F243AFB680050C780 /* StorageShed_caption.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = StorageShed_caption.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6E8B4D5235805C900113376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E8B4EB235805CB00113376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E8B4F6235805CB00113376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6E8B4CF235805C900113376 = {
+			isa = PBXGroup;
+			children = (
+				E6E8B4DA235805C900113376 /* IdahoPenn */,
+				E6E8B4F1235805CB00113376 /* IdahoPennTests */,
+				E6E8B4FC235805CB00113376 /* IdahoPennUITests */,
+				E6E8B4D9235805C900113376 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6E8B4D9235805C900113376 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6E8B4D8235805C900113376 /* IdahoPenn.app */,
+				E6E8B4EE235805CB00113376 /* IdahoPennTests.xctest */,
+				E6E8B4F9235805CB00113376 /* IdahoPennUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6E8B4DA235805C900113376 /* IdahoPenn */ = {
+			isa = PBXGroup;
+			children = (
+				F7613FAB24157D9F00545FAD /* Tabs */,
+				F7613F3123D962C200545FAD /* Audio */,
+				F7613F2E23D95B0800545FAD /* AdminViewController.swift */,
+				F7613F942410CB3100545FAD /* ShedViewController.swift */,
+				F7613F3623E274CA00545FAD /* BarberViewController.swift */,
+				F7613F3823E276A600545FAD /* ChapelViewController.swift */,
+				F7613F3E23E278A000545FAD /* DiningViewController.swift */,
+				F7613F4223E27A6800545FAD /* HospitalViewController.swift */,
+				F7613F4623E27BFC00545FAD /* RoseViewController.swift */,
+				E6E8B4DB235805C900113376 /* AppDelegate.swift */,
+				E6E8B4DD235805C900113376 /* art.scnassets */,
+				E6E8B4DF235805C900113376 /* ViewController.swift */,
+				E6E8B4E1235805C900113376 /* Main.storyboard */,
+				F7613FB8241593C400545FAD /* MugshotViewController.swift */,
+				F7613F96241570CF00545FAD /* AudioTabViewController.swift */,
+				F7613F542400618500545FAD /* HospitalARViewController.swift */,
+				F7DC1A39243AE4E00050C780 /* ChapelARViewController.swift */,
+				F7DC1A3B243AF1930050C780 /* DiningARViewController.swift */,
+				F7DC1A35243AC9580050C780 /* GallowsARViewController.swift */,
+				F7613F4A23E27D2E00545FAD /* SallyViewController.swift */,
+				F7613F4E23E27E9100545FAD /* WomensViewController.swift */,
+				F7613F5223E27F5A00545FAD /* YardViewController.swift */,
+				E6E8B50F235808BA00113376 /* MapViewController.swift */,
+				F789F59D236CBC2B001ECC21 /* LocationViewController.swift */,
+				F789F59F236CC424001ECC21 /* MainNavigationController.swift */,
+				E6E8B4E4235805CB00113376 /* Assets.xcassets */,
+				F7DC1A33243AC81C0050C780 /* Gallows.rcproject */,
+				F7613F562400620300545FAD /* Hospital.rcproject */,
+				F7DC1A37243ADFA30050C780 /* Chapel.rcproject */,
+				F7DC1A3D243AF8FD0050C780 /* DiningHall.rcproject */,
+				E6E8B4E6235805CB00113376 /* LaunchScreen.storyboard */,
+				E6E8B4E9235805CB00113376 /* Info.plist */,
+			);
+			path = IdahoPenn;
+			sourceTree = "<group>";
+		};
+		E6E8B4F1235805CB00113376 /* IdahoPennTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6E8B4F2235805CB00113376 /* IdahoPennTests.swift */,
+				E6E8B4F4235805CB00113376 /* Info.plist */,
+			);
+			path = IdahoPennTests;
+			sourceTree = "<group>";
+		};
+		E6E8B4FC235805CB00113376 /* IdahoPennUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E6E8B4FD235805CB00113376 /* IdahoPennUITests.swift */,
+				E6E8B4FF235805CB00113376 /* Info.plist */,
+			);
+			path = IdahoPennUITests;
+			sourceTree = "<group>";
+		};
+		F7613F3123D962C200545FAD /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				F7613F9924157C8C00545FAD /* Chapel_Interview.mp3 */,
+				F7613F9D24157C8D00545FAD /* Womens_Interview.mp3 */,
+				F7613F9C24157C8C00545FAD /* Dining_Interview.mp3 */,
+				F7613F9824157C8C00545FAD /* Yard_Interview.mp3 */,
+				F7613F9F24157C8D00545FAD /* Chapel_Interview2.mp3 */,
+				F7613F9A24157C8C00545FAD /* Sally_Interview.mp3 */,
+				F7613F9B24157C8C00545FAD /* Rose_Interview.mp3 */,
+				F7613F9E24157C8D00545FAD /* Shed_Interview.mp3 */,
+				F7613F5023E27EE800545FAD /* yard_caption.wav */,
+				F7613F4C23E27E5D00545FAD /* womens_caption.wav */,
+				F7613F4823E27CE200545FAD /* sallyport_caption.wav */,
+				F7613F4423E27BEA00545FAD /* rosegarden_caption.wav */,
+				F7613F4023E279A700545FAD /* hospital_caption.wav */,
+				F7613F3C23E2783400545FAD /* dining_caption.wav */,
+				F7613F3A23E2770D00545FAD /* chapel_caption.wav */,
+				F7613F3423E2749C00545FAD /* barber_caption.wav */,
+				F7613F3223D962CF00545FAD /* adminbldg_caption.wav */,
+				F7DC1A3F243AFB680050C780 /* StorageShed_caption.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		F7613FAB24157D9F00545FAD /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				F7613FB424157EEE00545FAD /* RoseInterviewViewController.swift */,
+				F7613FB624157F4300545FAD /* SallyInterviewViewController.swift */,
+				F7613FB024157E9A00545FAD /* YardInterviewViewController.swift */,
+				F7613FB224157EC200545FAD /* DiningInterviewViewController.swift */,
+				F7613FA824157CDE00545FAD /* WomensInterviewViewController.swift */,
+				F7613FAC24157DEC00545FAD /* ChapelInterviewViewController.swift */,
+				F7613FAE24157E2000545FAD /* ShedInterviewController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6E8B4D7235805C900113376 /* IdahoPenn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E8B502235805CB00113376 /* Build configuration list for PBXNativeTarget "IdahoPenn" */;
+			buildPhases = (
+				E6E8B4D4235805C900113376 /* Sources */,
+				E6E8B4D5235805C900113376 /* Frameworks */,
+				E6E8B4D6235805C900113376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IdahoPenn;
+			productName = IdahoPenn;
+			productReference = E6E8B4D8235805C900113376 /* IdahoPenn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6E8B4ED235805CB00113376 /* IdahoPennTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E8B505235805CB00113376 /* Build configuration list for PBXNativeTarget "IdahoPennTests" */;
+			buildPhases = (
+				E6E8B4EA235805CB00113376 /* Sources */,
+				E6E8B4EB235805CB00113376 /* Frameworks */,
+				E6E8B4EC235805CB00113376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6E8B4F0235805CB00113376 /* PBXTargetDependency */,
+			);
+			name = IdahoPennTests;
+			productName = IdahoPennTests;
+			productReference = E6E8B4EE235805CB00113376 /* IdahoPennTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6E8B4F8235805CB00113376 /* IdahoPennUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E8B508235805CB00113376 /* Build configuration list for PBXNativeTarget "IdahoPennUITests" */;
+			buildPhases = (
+				E6E8B4F5235805CB00113376 /* Sources */,
+				E6E8B4F6235805CB00113376 /* Frameworks */,
+				E6E8B4F7235805CB00113376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6E8B4FB235805CB00113376 /* PBXTargetDependency */,
+			);
+			name = IdahoPennUITests;
+			productName = IdahoPennUITests;
+			productReference = E6E8B4F9235805CB00113376 /* IdahoPennUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6E8B4D0235805C900113376 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Nicholai Cascio";
+				TargetAttributes = {
+					E6E8B4D7235805C900113376 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					E6E8B4ED235805CB00113376 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E6E8B4D7235805C900113376;
+					};
+					E6E8B4F8235805CB00113376 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E6E8B4D7235805C900113376;
+					};
+				};
+			};
+			buildConfigurationList = E6E8B4D3235805C900113376 /* Build configuration list for PBXProject "IdahoPenn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6E8B4CF235805C900113376;
+			productRefGroup = E6E8B4D9235805C900113376 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6E8B4D7235805C900113376 /* IdahoPenn */,
+				E6E8B4ED235805CB00113376 /* IdahoPennTests */,
+				E6E8B4F8235805CB00113376 /* IdahoPennUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6E8B4D6235805C900113376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7613FA424157C8D00545FAD /* Dining_Interview.mp3 in Resources */,
+				F7613F3323D962D000545FAD /* adminbldg_caption.wav in Resources */,
+				F7613F4123E279A700545FAD /* hospital_caption.wav in Resources */,
+				F7613F4923E27CE200545FAD /* sallyport_caption.wav in Resources */,
+				E6E8B4DE235805C900113376 /* art.scnassets in Resources */,
+				F7613FA224157C8D00545FAD /* Sally_Interview.mp3 in Resources */,
+				F7613FA024157C8D00545FAD /* Yard_Interview.mp3 in Resources */,
+				F7613F4523E27BEA00545FAD /* rosegarden_caption.wav in Resources */,
+				F7613FA724157C8D00545FAD /* Chapel_Interview2.mp3 in Resources */,
+				E6E8B4E8235805CB00113376 /* LaunchScreen.storyboard in Resources */,
+				F7613F3523E2749C00545FAD /* barber_caption.wav in Resources */,
+				F7613F3D23E2783400545FAD /* dining_caption.wav in Resources */,
+				F7613FA324157C8D00545FAD /* Rose_Interview.mp3 in Resources */,
+				F7613FA524157C8D00545FAD /* Womens_Interview.mp3 in Resources */,
+				F7613F5123E27EE800545FAD /* yard_caption.wav in Resources */,
+				F7613F4D23E27E5D00545FAD /* womens_caption.wav in Resources */,
+				F7613FA624157C8D00545FAD /* Shed_Interview.mp3 in Resources */,
+				F7DC1A40243AFB680050C780 /* StorageShed_caption.wav in Resources */,
+				E6E8B4E5235805CB00113376 /* Assets.xcassets in Resources */,
+				F7613F3B23E2770D00545FAD /* chapel_caption.wav in Resources */,
+				F7613FA124157C8D00545FAD /* Chapel_Interview.mp3 in Resources */,
+				E6E8B4E3235805C900113376 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E8B4EC235805CB00113376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E8B4F7235805CB00113376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6E8B4D4235805C900113376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7613F572400620300545FAD /* Hospital.rcproject in Sources */,
+				F7613F4B23E27D2E00545FAD /* SallyViewController.swift in Sources */,
+				F7613F2F23D95B0800545FAD /* AdminViewController.swift in Sources */,
+				F7DC1A34243AC81C0050C780 /* Gallows.rcproject in Sources */,
+				F7613FB524157EEE00545FAD /* RoseInterviewViewController.swift in Sources */,
+				F7613F4723E27BFC00545FAD /* RoseViewController.swift in Sources */,
+				F7613FB724157F4300545FAD /* SallyInterviewViewController.swift in Sources */,
+				F7613FAF24157E2000545FAD /* ShedInterviewController.swift in Sources */,
+				F7DC1A3E243AF8FD0050C780 /* DiningHall.rcproject in Sources */,
+				F7613F3923E276A600545FAD /* ChapelViewController.swift in Sources */,
+				F7613FB9241593C400545FAD /* MugshotViewController.swift in Sources */,
+				F7DC1A3A243AE4E00050C780 /* ChapelARViewController.swift in Sources */,
+				F7613F4F23E27E9100545FAD /* WomensViewController.swift in Sources */,
+				F7613FA924157CDE00545FAD /* WomensInterviewViewController.swift in Sources */,
+				F7613FB124157E9A00545FAD /* YardInterviewViewController.swift in Sources */,
+				F7613FAD24157DEC00545FAD /* ChapelInterviewViewController.swift in Sources */,
+				F789F5A0236CC424001ECC21 /* MainNavigationController.swift in Sources */,
+				F7613F97241570CF00545FAD /* AudioTabViewController.swift in Sources */,
+				F7613F3723E274CA00545FAD /* BarberViewController.swift in Sources */,
+				F7613F4323E27A6800545FAD /* HospitalViewController.swift in Sources */,
+				E6E8B4E0235805C900113376 /* ViewController.swift in Sources */,
+				F7613F3F23E278A000545FAD /* DiningViewController.swift in Sources */,
+				E6E8B510235808BA00113376 /* MapViewController.swift in Sources */,
+				E6E8B4DC235805C900113376 /* AppDelegate.swift in Sources */,
+				F7613F552400618500545FAD /* HospitalARViewController.swift in Sources */,
+				F7DC1A36243AC9580050C780 /* GallowsARViewController.swift in Sources */,
+				F7613F5323E27F5A00545FAD /* YardViewController.swift in Sources */,
+				F789F59E236CBC2B001ECC21 /* LocationViewController.swift in Sources */,
+				F7DC1A3C243AF1930050C780 /* DiningARViewController.swift in Sources */,
+				F7DC1A38243ADFA30050C780 /* Chapel.rcproject in Sources */,
+				F7613FB324157EC200545FAD /* DiningInterviewViewController.swift in Sources */,
+				F7613F952410CB3100545FAD /* ShedViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E8B4EA235805CB00113376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E8B4F3235805CB00113376 /* IdahoPennTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E8B4F5235805CB00113376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E8B4FE235805CB00113376 /* IdahoPennUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6E8B4F0235805CB00113376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6E8B4D7235805C900113376 /* IdahoPenn */;
+			targetProxy = E6E8B4EF235805CB00113376 /* PBXContainerItemProxy */;
+		};
+		E6E8B4FB235805CB00113376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6E8B4D7235805C900113376 /* IdahoPenn */;
+			targetProxy = E6E8B4FA235805CB00113376 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6E8B4E1235805C900113376 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6E8B4E2235805C900113376 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6E8B4E6235805CB00113376 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6E8B4E7235805CB00113376 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6E8B500235805CB00113376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6E8B501235805CB00113376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6E8B503235805CB00113376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S34T9FQZJ;
+				INFOPLIST_FILE = IdahoPenn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicholaicascio.IdahoPenn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E6E8B504235805CB00113376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S34T9FQZJ;
+				INFOPLIST_FILE = IdahoPenn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicholaicascio.IdahoPenn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		E6E8B506235805CB00113376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IdahoPennTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicholaicascio.IdahoPennTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdahoPenn.app/IdahoPenn";
+			};
+			name = Debug;
+		};
+		E6E8B507235805CB00113376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IdahoPennTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicholaicascio.IdahoPennTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdahoPenn.app/IdahoPenn";
+			};
+			name = Release;
+		};
+		E6E8B509235805CB00113376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IdahoPennUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicholaicascio.IdahoPennUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IdahoPenn;
+			};
+			name = Debug;
+		};
+		E6E8B50A235805CB00113376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IdahoPennUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicholaicascio.IdahoPennUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IdahoPenn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6E8B4D3235805C900113376 /* Build configuration list for PBXProject "IdahoPenn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E8B500235805CB00113376 /* Debug */,
+				E6E8B501235805CB00113376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E8B502235805CB00113376 /* Build configuration list for PBXNativeTarget "IdahoPenn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E8B503235805CB00113376 /* Debug */,
+				E6E8B504235805CB00113376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E8B505235805CB00113376 /* Build configuration list for PBXNativeTarget "IdahoPennTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E8B506235805CB00113376 /* Debug */,
+				E6E8B507235805CB00113376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E8B508235805CB00113376 /* Build configuration list for PBXNativeTarget "IdahoPennUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E8B509235805CB00113376 /* Debug */,
+				E6E8B50A235805CB00113376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6E8B4D0235805C900113376 /* Project object */;
+}
